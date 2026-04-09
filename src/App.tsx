@@ -435,6 +435,28 @@ export default function App() {
           </div>
         </section>
 
+        <section className="scene accelerator-section">
+          <article className="accelerator-card">
+            <div className="accelerator-badge">PM Accelerator</div>
+            <div className="accelerator-copy">
+              <p className="section-kicker">Career Growth</p>
+              <h3>Built to support product managers at every stage.</h3>
+              <p>
+                The Product Manager Accelerator Program is designed to support PM
+                professionals through every stage of their careers, from
+                students looking for entry-level roles to Directors preparing
+                for leadership opportunities.
+              </p>
+              <p>
+                Its community is ambitious and deeply committed. Through the
+                program, members strengthen product thinking, leadership
+                judgment, and practical PM skills that create a durable
+                foundation for future growth.
+              </p>
+            </div>
+          </article>
+        </section>
+
         <section id="records" className="scene records-section">
           <div className="section-heading">
             <p className="section-kicker">Saved forecasts</p>
@@ -572,6 +594,10 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        <footer className="page-footer">
+          <p>Crafted by Adham Ahmed</p>
+        </footer>
       </main>
     </div>
   );

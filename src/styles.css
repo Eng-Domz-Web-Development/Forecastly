@@ -539,6 +539,55 @@ main {
   gap: 1rem;
 }
 
+.accelerator-section {
+  padding-top: 2rem;
+}
+
+.accelerator-card {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 0.28fr 1fr;
+  gap: 1.2rem;
+  align-items: start;
+  padding: 1.6rem;
+  border-radius: 1.8rem;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(circle at top left, rgba(255, 167, 108, 0.18), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(68, 211, 255, 0.14), transparent 24%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    rgba(8, 17, 28, 0.82);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.22);
+}
+
+.accelerator-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+  padding: 1rem;
+  border-radius: 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  text-align: center;
+}
+
+.accelerator-copy h3 {
+  margin: 0;
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 0.96;
+}
+
+.accelerator-copy p {
+  max-width: 70ch;
+  color: var(--muted);
+}
+
 .metric-focus {
   padding: 1.3rem;
   background:
@@ -640,6 +689,14 @@ main {
   .metrics-panel,
   .insight-strip {
     grid-template-columns: 1fr;
+  }
+
+  .accelerator-card {
+    grid-template-columns: 1fr;
+  }
+
+  .accelerator-badge {
+    min-height: auto;
   }
 }
 
@@ -837,6 +894,19 @@ main {
 
 .empty-card p {
   color: var(--muted);
+}
+
+.page-footer {
+  padding: 2.8rem 0 1rem;
+  text-align: center;
+}
+
+.page-footer p {
+  margin: 0;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
 }
 
 @media (max-width: 1080px) {
