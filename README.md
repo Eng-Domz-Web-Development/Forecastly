@@ -2,6 +2,12 @@
 
 Forecastly is a fullstack weather application built for a web-first experience. It lets users search for weather by flexible location input, view current conditions and a five-day forecast, save date-range weather requests to a database, manage saved records, and export stored data in multiple formats.
 
+## Live Demo
+
+Frontend showcase:
+
+- https://eng-domz-web-development.github.io/Forecastly/
+
 ## Overview
 
 Forecastly supports:
